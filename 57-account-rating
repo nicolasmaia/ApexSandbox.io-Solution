@@ -1,5 +1,4 @@
 public void setAccountRating(Account a) {
- if(a.Name <> null){
     if(a.AnnualRevenue <= 100000){
         a.Rating = 'Cold';
     }
@@ -9,8 +8,4 @@ public void setAccountRating(Account a) {
     else{
         a.Rating = 'Hot';
     }
-insert a;
- } else{
-     
- }
 }
