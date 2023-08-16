@@ -11,6 +11,6 @@ public void setAccountRating(Account a) {
     }
 insert a;
  } else{
-     return null;
+     
  }
 }
