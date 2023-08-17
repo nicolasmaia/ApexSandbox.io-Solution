@@ -1,6 +1,8 @@
 public Boolean isBirthday(Contact c) {
 
-    if(c.Birthdate.month == System.today().month){
+    String birthdateMonth = new String(c.Birthdate.month); 
+
+    if(c.Birthdate == System.today()){
         return true;
     }
     else{
