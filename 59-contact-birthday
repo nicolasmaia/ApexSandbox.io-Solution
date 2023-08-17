@@ -4,9 +4,13 @@ public Boolean isBirthday(Contact c) {
     Integer birthdateMonth = c.Birthdate.month();
     Integer birthdateYear = c.Birthdate.year();
     Integer thisMonth = System.today().month(); 
+    Integer thisYear = System.today().year(); 
 
     if(c.Birthdate == System.today()){
         return true;
+    }
+    else if(birthdateMonth == thisMonth && birthdateYear == thisYear){
+        return true
     }
     else{
         return false;
