@@ -1,7 +1,9 @@
 public Boolean isBirthday(Contact c) {
 
 
-    Integer birthdateMonth = c.Birthdate.month(); 
+    Integer birthdateMonth = c.Birthdate.month();
+    Integer birthdateYear = c.Birthdate.year();
+    Integer thisMonth = System.today().month(); 
 
     if(c.Birthdate == System.today()){
         return true;
