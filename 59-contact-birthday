@@ -10,7 +10,7 @@ public Boolean isBirthday(Contact c) {
         return true;
     }
     else if(birthdateMonth == thisMonth && birthdateYear == thisYear){
-        return true
+        return true;
     }
     else{
         return false;
