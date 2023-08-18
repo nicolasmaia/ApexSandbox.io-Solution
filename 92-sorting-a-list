@@ -5,5 +5,5 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
         accountNames.sort();
         return accountNames;
     }
-return List<String>();
+return new List<String>();
 } 
