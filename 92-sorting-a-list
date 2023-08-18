@@ -6,4 +6,4 @@ public List<String> getNamesInAscOrder(List<String> accountNames)
         return accountNames;
     }
 
-}
+} return new List<String>();
