@@ -5,9 +5,9 @@ public void linkParent(Case c1, Case c2) {
         DateTime c1CreatedDate = DateTime.valueOf(c1.CreatedDate);
         DateTime c2CreatedDate = DateTime.valueOf(c2.CreatedDate);
 
-        if (c1CreatedDate < c2CreatedDate) {
+        if (c1CreatedDate > c2CreatedDate) { // Compare with > for the earlier case to be the parent
             c1.ParentId = c2.Id;
-        } else if (c1CreatedDate > c2CreatedDate) {
+        } else if (c1CreatedDate < c2CreatedDate) { // Compare with < for the later case to be the child
             c2.ParentId = c1.Id;
         }
     }
