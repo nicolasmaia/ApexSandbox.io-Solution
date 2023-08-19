@@ -4,12 +4,13 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
 
         List<Integer> positiveIntList = new List<Integer>();
 
-        for(currentNumber : numbers){
+        for(Integer currentNumber : numbers){
             if(currentNumber > 0){
                 positiveIntList.add(currentNumber);
             } 
             
-        }      return positiveIntList;   
+        }      
+        return positiveIntList;   
 
     } return null;
 
