@@ -2,9 +2,10 @@ public List<Integer> evenNumbers(Integer n) {
 
     if(n > 0){
         List<Integer> evenList = new List<Integer>();
-        for(Integer i = 2; i <= n; i++)
+        for(Integer i = 2; i <= n; i =+ 2)
 {
             evenList.add(i);
+            
 
         } return evenList;
     } else{
