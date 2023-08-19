@@ -1,11 +1,13 @@
 public Integer maxConsecutiveOnes(Integer[] numbers) {
 
     if(numbers <> null){
-        if(numbers < 2){
-            Integer consecutiveNumber;
-
-        }
-        return '';
+           Integer consecutiveNumber = 0;
+            
+            for(currentNumber : numbers){
+                if(currentNumber == 1){
+                    consecutiveNumber =+ 1;
+                }
+            }
 
     }
     return null;
