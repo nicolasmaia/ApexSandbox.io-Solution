@@ -2,7 +2,7 @@ public static Integer arraySum(List<Integer> numbers) {
 
 if(numbers <> null){
 
-    Integer currentNumber = new Integer();
+    Integer currentNumber
 
     for (Integer i = 0; i <= numbers.size(); i++) {
     
