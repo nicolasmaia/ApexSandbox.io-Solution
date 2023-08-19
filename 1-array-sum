@@ -1,9 +1,10 @@
 public static Integer arraySum(List<Integer> numbers) {
 
 if(numbers <> null){
-    for (i == 0; i <= numbers.size(); i++) {
+    for (Integer currentNumber : numbers) {
+    currentNumber = currentNumber + currentNumber.get((currentNumber.get()-1));
     
-} 
+}
 }
 
 }
