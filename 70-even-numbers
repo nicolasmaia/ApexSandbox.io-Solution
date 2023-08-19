@@ -5,7 +5,6 @@ public List<Integer> evenNumbers(Integer n) {
         for(Integer i = 2; i <= n; i++)
 {
             evenList.add(i);
-            i =+ 1;
             
 
         } return evenList;
