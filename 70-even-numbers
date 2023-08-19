@@ -6,6 +6,6 @@ public List<Integer> evenNumbers(Integer n) {
         }
         return evenList;
     } else {
-        return null;
+        return new List<Integer>(); // Return an empty list for n <= 0
     }
 }
