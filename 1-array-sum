@@ -9,6 +9,6 @@ if(numbers <> null){
     
 } 
     return numberSum;
-}
+}return null;
 
 }
