@@ -8,8 +8,8 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
             if(currentNumber > 0){
                 positiveIntList.add(currentNumber);
             } 
-        }                   return positiveIntList;
-
+            
+        }      return positiveIntList;   
 
     } return null;
 
