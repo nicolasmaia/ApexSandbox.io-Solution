@@ -6,7 +6,9 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
             for(Integer currentNumber : numbers){
                 if(currentNumber == 1){
                     consecutiveNumber += 1;
-                } 
+                } if else(){
+                    consecutiveNumber = 0;
+                }
             } 
             return consecutiveNumber;
     }
