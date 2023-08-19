@@ -1,0 +1,13 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+
+    if(numbers <> null){
+        if(numbers < 2){
+            Integer consecutiveNumber;
+
+        }
+        return '';
+
+    }
+    return null;
+
+}
