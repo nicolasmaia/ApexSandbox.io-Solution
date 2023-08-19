@@ -3,7 +3,7 @@ public List<Integer> evenNumbers(Integer n) {
     if(n > 0){
         List<Integer> evenList;
         for(Integer i = 2; i <= n; i+++){
-            evenList =+ n[i]
+            evenList =+ n[i];
 
         }
     }
