@@ -7,7 +7,7 @@ public static Integer findLargest(List<Integer> nums) {
             if(largestInt < currentNumber){
                 largestInt = currentNumber;
             }
-        }
+        } return largestInt;
         
     }
 }
