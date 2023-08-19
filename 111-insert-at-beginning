@@ -1,0 +1,10 @@
+public void insertAtStart(String cityName, List<String> cities) {
+
+    if(cities <> null){
+        cities.add(cityName);
+        cities.set(0,cityName);
+        
+    }
+    return null;
+
+}
