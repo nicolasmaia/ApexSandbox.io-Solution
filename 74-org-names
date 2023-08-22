@@ -1,10 +1,10 @@
 public List<String> orgNames(List<String> adjectives, List<String> animals) {
-    if(adjectives <> null || adjectives.size() > 0) || animals <> null || animals.size() > 0){
+    if(adjectives <> null || adjectives.size() > 0) || (animals <> null || animals.size() > 0)){
         List<String> orgNameComboList = new List<String>();
 
         for(currentAdjective : adjectives){
             for(currentAnimal : animals){
-                orgNameComboList.add(currentAdjective);
+                orgNameComboList.add(currentAdjective+'-'+currentAnimal);
             }
         }
 
