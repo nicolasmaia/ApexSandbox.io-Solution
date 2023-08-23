@@ -1,6 +1,8 @@
 public Boolean companionPlants(List<String> plants) {
     Boolean trueOrFalse = true;
-    if(plants.size() > 1){
+    if(plants.size < 1){
+        trueOrFalse = false;
+    }
     for(Integer i = 1; i < plants.size() - 2; i++){
         if(plants[i] == 'lettuce' && 
             (plants[i-1] == 'cucumbers' || plants[i+1] == 'cucumbers' ||
@@ -10,12 +12,10 @@ public Boolean companionPlants(List<String> plants) {
             (plants[i-1] == 'carrots' || plants[i+1] == 'carrots' ||
             plants[i-1] == 'tomatoes' || plants[i+1] == 'tomatoes')){
                 //true
-        }
-        }
-         else{
+        } else{
                 trueOrFalse = false;
         }
-        }
-    return trueOrFalse;
     }
- 
+    return trueOrFalse;
+
+}
