@@ -10,11 +10,11 @@ public Boolean companionPlants(List<String> plants) {
             (plants[i-1] == 'carrots' || plants[i+1] == 'carrots' ||
             plants[i-1] == 'tomatoes' || plants[i+1] == 'tomatoes')){
                 //true
+        }
+        }
         } else{
                 trueOrFalse = false;
         }
-    }
-    }
     return trueOrFalse;
-
-}
+    }
+ 
