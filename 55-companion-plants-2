@@ -3,7 +3,7 @@ public Boolean companionPlants(List<String> plants) {
     if(plants.size() <> 0 && plants.size() < 2){
         trueOrFalse = false;
     }
-    for(Integer i = 1; i < plants.size() - 2; i++){
+    for(Integer i = 1; i < plants.size() - 1; i++){
         if(plants[i] == 'lettuce' && 
             (plants[i-1] == 'cucumbers' || plants[i+1] == 'cucumbers' ||
             plants[i-1] == 'onions' || plants[i+1] == 'onions')){
