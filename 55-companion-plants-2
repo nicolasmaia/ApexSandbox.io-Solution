@@ -1,5 +1,5 @@
 public Boolean companionPlants(List<String> plants) {
-    for(Integer i = 0; i < companionPlants.size() < 1; i++){
+    for(Integer i = 0; i < companionPlants.size() < i; i++){
         if(companionPlants[i] == 'lettuce' && 
             (companionPlants[i-1] == 'cucumbers' || companionPlants[i+1] == 'cucumbers' ||
             companionPlants[i-1] == 'onions' || companionPlants[i+1] == 'onions')){
