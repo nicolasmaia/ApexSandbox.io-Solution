@@ -1,8 +1,6 @@
 public Boolean companionPlants(List<String> plants) {
-    Boolean trueOrFalse = true;
-    
-    if (plants.size() < 2) {
-        return false; // Cannot have companions with fewer than 2 plants
+    if (plants.size() == 0) {
+        return true; // Condition is considered true when no plants are present
     }
     
     for (Integer i = 1; i < plants.size(); i++) {
@@ -17,10 +15,9 @@ public Boolean companionPlants(List<String> plants) {
         } else if (plants[i-1] == 'tomatoes' && plants[i] == 'onions') {
             // Companionship is valid
         } else {
-            trueOrFalse = false;
-            break; // No need to check further
+            return false; // If any pair is not companions, return false
         }
     }
     
-    return trueOrFalse;
+    return true; // If all pairs are companions, return true
 }
