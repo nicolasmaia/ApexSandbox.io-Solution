@@ -2,10 +2,16 @@ public boolean isSorted(List<Integer> numbers) {
     if(numbers.size() < 2){
         return true;
     }
+    if(
     for(Integer i = 1; i < numbers.size(); i++){
-        if(numbers[i] < numbers[i-1]){
-            if(numbers)
+        if(numbers[i] == numbers[i-1]){
+            break;
+        }else if(numbers[i] > numbers[i-1]){
+            
         }
-    }
+        )
+        {
+            return false;
+        }
 
 }
