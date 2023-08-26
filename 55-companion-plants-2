@@ -1,22 +1,21 @@
 public Boolean companionPlants(List<String> plants) {
-        Boolean trueOrFalse = true;
-        if(plants.size() <> 0 && plants.size() < 2){
-            trueOrFalse = false;
-        }
-        for(Integer i = 1; i < plants.size() - 1; i++){
-            if(plants[i] == 'lettuce' && 
-                (plants[i-1] == 'cucumbers' || plants[i+1] == 'cucumbers' ||
-                plants[i-1] == 'onions' || plants[i+1] == 'onions')){
-                    //true
-            } else if(plants[i] == 'onions' && 
-                (plants[i-1] == 'carrots' || plants[i+1] == 'carrots' ||
-                plants[i-1] == 'tomatoes' || plants[i+1] == 'tomatoes')){
-                    //true
-            } else{
-                    trueOrFalse = false;
-                    break;
+    Boolean trueOrFalse = true;
+    if (plants.size() < 2) {
+        trueOrFalse = false;
+    } else {
+        for (Integer i = 1; i < plants.size() - 1; i++) {
+            if ((plants[i] == 'lettuce' &&
+                 (plants[i-1] == 'cucumbers' || plants[i+1] == 'cucumbers' ||
+                  plants[i-1] == 'onions' || plants[i+1] == 'onions')) ||
+                (plants[i] == 'onions' &&
+                 (plants[i-1] == 'carrots' || plants[i+1] == 'carrots' ||
+                  plants[i-1] == 'tomatoes' || plants[i+1] == 'tomatoes'))) {
+                // Plants are companions, no action needed
+            } else {
+                trueOrFalse = false;
+                break; // Exit the loop early since the condition is not met
             }
         }
-        return trueOrFalse;
-
     }
+    return trueOrFalse;
+}
