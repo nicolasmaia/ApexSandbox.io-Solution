@@ -1,18 +1,16 @@
 public boolean isSorted(List<Integer> numbers) {
-
-        if (numbers.size() < 3) {
-            return true; // Lists with less than 3 elements are always considered sorted
-        }
-        
-        boolean ascending = numbers.get(0) < numbers.get(1); // Determine initial sort order
-        
-        for (Integer i = 2; i < numbers.size(); i++) {
-            if ((ascending && numbers.get(i) < numbers.get(i - 1)) ||
-                (!ascending && numbers.get(i) > numbers.get(i - 1))) {
-                return false; // Sort order is broken, list is not sorted
-            }
-        }
-        
-        return true; // All elements maintain the same sort order
+    if (numbers.size() < 3) {
+        return true; // Lists with less than 3 elements are always considered sorted
     }
-}}
+
+    boolean ascending = numbers.get(0) < numbers.get(1); // Determine initial sort order
+
+    for (Integer i = 2; i < numbers.size(); i++) {
+        if ((ascending && numbers.get(i) < numbers.get(i - 1)) ||
+            (!ascending && numbers.get(i) > numbers.get(i - 1))) {
+            return false; // Sort order is broken, list is not sorted
+        }
+    }
+
+    return true; // All elements maintain the same sort order
+}
