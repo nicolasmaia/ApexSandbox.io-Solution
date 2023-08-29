@@ -2,7 +2,7 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> fibonacciList = new List<Integer>(1, 1);
     Integer sum = 0;
 
-    for(Integer i = 1; i > n; i++){
+    for(Integer i = 1; i < n; i++){
         sum = n[i-1] + n[i]; 
         fibonacciList.add(sum);
     }
