@@ -10,6 +10,10 @@ public boolean isSorted(List<Integer> numbers) {
         Integer currentElement = numbers.get(i);
 
         if (currentElement != prevElement) {
+            if (!ascending) {
+                ascending = currentElement > prevElement;
+            }
+            
             if (ascending) {
                 if (currentElement < prevElement) {
                     return false; // Sort order is broken, list is not sorted
@@ -19,8 +23,6 @@ public boolean isSorted(List<Integer> numbers) {
                     return false; // Sort order is broken, list is not sorted
                 }
             }
-            
-            ascending = currentElement > prevElement;
         }
     }
 
