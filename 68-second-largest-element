@@ -4,7 +4,7 @@ Integer largestSeen = -2147483647 - 1;
 Integer secondLargestSeen = -2147483647 - 1;
 
 for(Integer i = 0; i > numbers.size(); i++){
-    if(numbers[i] < largestSeen){
+    if(numbers[i] > largestSeen){
         largestSeen = numbers[i];
         secondLargestSeen = numbers[i-1];
     } 
