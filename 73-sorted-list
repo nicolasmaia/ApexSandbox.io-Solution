@@ -15,4 +15,4 @@ public boolean isSorted(List<Integer> numbers) {
         
         return true; // All elements maintain the same sort order
     }
-}
+}}
