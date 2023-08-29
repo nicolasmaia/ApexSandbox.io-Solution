@@ -1,5 +1,5 @@
 public List<Integer> fibonacciSeries(Integer n) {
-    List<Integer> fibonacciList = new List<Integer>(1, 1);
+    List<Integer> fibonacciList = new List<Integer>{1, 1};
     Integer sum = 0;
 
     for(Integer i = 2; i < n; i++){
