@@ -3,18 +3,24 @@ public boolean isSorted(List<Integer> numbers) {
         return true; // Lists with less than 3 elements are always considered sorted
     }
 
-    Integer prevElement = numbers.get(0);
-    boolean ascending = prevElement < numbers.get(1); // Determine initial sort order
+    boolean ascending = false; // Initialize sort order to undetermined
 
     for (Integer i = 1; i < numbers.size(); i++) {
+        Integer prevElement = numbers.get(i - 1);
         Integer currentElement = numbers.get(i);
-        
+
         if (currentElement != prevElement) {
-            if ((ascending && currentElement < prevElement) ||
-                (!ascending && currentElement > prevElement)) {
-                return false; // Sort order is broken, list is not sorted
+            if (ascending) {
+                if (currentElement < prevElement) {
+                    return false; // Sort order is broken, list is not sorted
+                }
+            } else {
+                if (currentElement > prevElement) {
+                    return false; // Sort order is broken, list is not sorted
+                }
             }
-            prevElement = currentElement;
+            
+            ascending = currentElement > prevElement;
         }
     }
 
