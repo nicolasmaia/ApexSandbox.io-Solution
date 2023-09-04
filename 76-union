@@ -1,9 +1,9 @@
 public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
-    if(set1 == null && set2 == null){
+    if(set1 == null || set2 == null){
         
     }
     else{
-        Set union = new Set();
+        Set<Integer> union = new Set<Integer>();
         for(currentItem1 : set1){
             union.add(currentItem1);
 
