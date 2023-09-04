@@ -1,7 +1,7 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> idsOfRelatedAccounts = new Set<Id>();
     if(opps <> null){
-        for(currentOpp : opps){
+        for(Opportunity currentOpp : opps){
             idsOfRelatedAccounts.add(currentOpp.AccountId);
         }
     }
