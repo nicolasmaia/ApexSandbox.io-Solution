@@ -8,4 +8,5 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     else{
         //do nothing if opps is null
     }
+    return idsOfRelatedAccounts;
 }
