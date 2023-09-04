@@ -1,14 +1,9 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> idsOfRelatedAccounts = new Set<Id>();
-    if(opps <> null){
-        for(Opportunity currentOpp : opps){
-            if(currentOpp.AccountId <> null){
-                idsOfRelatedAccounts.add(currentOpp.AccountId);
-                }
+    for(Opportunity currentOpp : opps){
+        if(currentOpp.AccountId != null){
+            idsOfRelatedAccounts.add(currentOpp.AccountId);
         }
-    }
-    else{
-        //do nothing if opps is null
     }
     return idsOfRelatedAccounts;
 }
