@@ -2,11 +2,8 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     Set<Integer> nums1Set = new Set<Integer>(); 
     Set<Integer> nums2Set = new Set<Integer>(); 
 
-    if(nums1 != null){
         nums1Set.addAll(nums1);
-    }
-    if(nums2 != null){
         nums2Set.addAll(nums2);
-    }
+
     return nums1Set == nums2Set;
 }
