@@ -1,9 +1,9 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
     Map<String, String> map = new Map<String, String>();
     
-    for(Contact currentContact : contacts){
-        if(currentContact.Phone != null){
-            map.put(currentContact.Name,currentContact.Phone);
+    for (Contact currentContact : contacts) { // Added "Contact" before "currentContact"
+        if (currentContact.Phone != null) {
+            map.put(currentContact.Name, currentContact.Phone);
         }
     }
     return map;
