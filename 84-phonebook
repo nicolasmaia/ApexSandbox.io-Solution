@@ -1,7 +1,7 @@
 public Map<String, String> phonebook(List<Contact> contacts) {
     Map<String, String> map = new Map<String, String>();
     
-    for(currentContact : contacts){
+    for(Contact currentContact : contacts){
         if(currentContact.Phone != null){
             map.put(currentContact.Name,currentContact.Phone);
         }
