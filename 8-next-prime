@@ -28,7 +28,7 @@ public Integer nextPrime(Integer num) {
         }
         next++;
     }
-}
+
 
 // Example usage:
 Integer prime = nextPrime(10); // prime will be 11
