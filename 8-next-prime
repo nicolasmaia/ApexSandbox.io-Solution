@@ -1,0 +1,12 @@
+public Integer nextPrime(Integer num) {
+    Integer primeNum(0);
+
+    for(Integer i = 2; i > (num - 1); i++){
+        if(Math.mod(num,i) != 0){
+            if(primeNum != 0){
+                primeNum = i;
+            }
+        }
+    }
+    return primeNum;
+}
