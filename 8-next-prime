@@ -1,12 +1,13 @@
 public Integer nextPrime(Integer num) {
     Integer primeNum = 0;
 
-    for(Integer i = num + 1; i > num; i++){
-        if(Math.mod(num,i) != 0){
-            if(primeNum != 0){
-                primeNum = i;
-            }
+    for (Integer i = 2; i < num; i++) {
+        if (Math.mod(num, i) == 0) {
+            // If num is divisible by i, it's not prime
+            return primeNum;
         }
     }
-    return primeNum;
+
+    // If the loop completes without finding a divisor, num is prime
+    return num;
 }
