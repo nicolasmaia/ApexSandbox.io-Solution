@@ -1,34 +1,31 @@
 public Integer nextPrime(Integer num) {
-    // Helper function to check if a number is prime
-    Boolean isPrime(Integer n) {
-        if (n <= 1) {
-            return false;
-        }
-        if (n <= 3) {
-            return true;
-        }
-        if (Math.mod(n, 2) == 0 || Math.mod(n, 3) == 0) {
-            return false;
-        }
-        Integer i = 5;
-        while (i * i <= n) {
-            if (Math.mod(n, i) == 0 || Math.mod(n, i + 2) == 0) {
-                return false;
-            }
-            i += 6;
-        }
-        return true;
-    }
+    // Start with the next integer greater than num
+    Integer candidate = num + 1;
 
-    // Start looping from num + 1 and find the next prime number
-    Integer next = num + 1;
     while (true) {
-        if (isPrime(next)) {
-            return next;
+        if (isPrime(candidate)) {
+            return candidate; // Found a prime number
         }
-        next++;
+        candidate++; // Check the next number
+    }
+}
+
+// Helper function to check if a number is prime
+private Boolean isPrime(Integer n) {
+    if (n <= 1) {
+        return false; // Numbers less than or equal to 1 are not prime
+    }
+    
+    if (n == 2) {
+        return true; // 2 is prime
     }
 
+    // Check divisibility for numbers from 2 to the square root of n
+    for (Integer i = 2; i <= Math.sqrt(n); i++) {
+        if (Math.mod(n, i) == 0) {
+            return false; // Found a divisor, so n is not prime
+        }
+    }
 
-// Example usage:
-Integer prime = nextPrime(10); // prime will be 11
+    return true; // If no divisors found, n is prime
+}
